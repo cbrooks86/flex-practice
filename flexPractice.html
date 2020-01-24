@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Exercise</title>
+    <style type="text/css">
+        body {
+            font-family: monospace;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+        }
+
+        header,
+        footer {
+            background-color: black;
+            padding: 20px;
+        }
+
+        main,
+        aside {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            margin: 5px 0;
+        }
+
+        .first {
+            flex-basis: 70%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .second {
+            flex-basis: 30%;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        div {
+            min-height: 173px;
+        }
+
+        .first div {
+            flex-basis: 30%;
+            background-color: blue;
+            color: white;
+            margin: 3px;
+        }
+
+        .second div {
+            background-color: red;
+            color: white;
+            margin: 3px;
+        }
+
+        #one {
+            order: 0;
+        }
+
+        #two {
+            order: 3;
+        }
+
+        #three {
+            order: 5;
+        }
+
+        #four {
+            order: 4;
+        }
+
+        #five {
+            order: 3;
+        }
+
+        #six {
+            order: 1;
+        }
+
+        #uno {
+            order: 2;
+        }
+
+        #dos {
+            order: 0;
+        }
+
+        #tres {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <main>
+        <aside class="first">
+            <div id="one"><strong>1</strong> ipsum dolor sit amet consectetur adipisicing elit. Quidem repellendus ut in aperiam eius
+                sunt saepe! Commodi quibusdam repellendus sed excepturi aspernatur reprehenderit dolorem earum minima
+                eveniet. Amet, necessitatibus magni?</div>
+            <div id="two"><strong>2</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae, minus
+                vitae nulla quis non cum ut ullam nihil eveniet laborum velit libero necessitatibus incidunt id
+                perspiciatis iure eos? Perspiciatis.</div>
+            <div id="three"><strong>3</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam facere, quos consectetur
+                quas vero sapiente totam! Dolor, voluptatem placeat voluptatibus quibusdam, accusantium libero,
+                accusamus et error tempora qui maiores.</div>
+            <div id="four"><strong>4</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae impedit delectus, numquam
+                optio quam est magni? Voluptas eius iusto odit sapiente quae doloribus incidunt, quis quam quidem saepe
+                vero sunt?</div>
+            <div id="five"><strong>5</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugit cupiditate laudantium,
+                aperiam sequi ex architecto error, enim necessitatibus tempore laborum inventore cumque? Illo,
+                perspiciatis in perferendis natus eius cumque.</div>
+            <div id="six"><strong>6</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a qui quae ipsam quas
+                distinctio beatae illo architecto, voluptatibus labore id cupiditate veniam ullam facilis suscipit quasi
+                praesentium non? Numquam?</div>
+        </aside>
+        <aside class="second">
+            <div id="uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus quisquam illo
+                aliquid totam voluptate fuga veniam consectetur cum aut assumenda delectus, rem quaerat similique, odit
+                quam eius expedita neque?</div>
+            <div id="dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam expedita aliquid provident
+                hic illo. Ducimus eligendi ipsa minima ea hic optio repellendus repellat, voluptatibus tempore? Et
+                nesciunt eum ipsum odit.</div>
+            <div id="tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos earum autem, doloribus
+                necessitatibus sunt officiis beatae vel esse ipsum debitis quam! Sapiente cupiditate ad possimus
+                similique quasi ducimus consequatur!</div>
+        </aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>
